@@ -1,0 +1,1 @@
+SMB enumeration against 192.168.1.171 using enum4linux. Results include shares, users, and OS details.
