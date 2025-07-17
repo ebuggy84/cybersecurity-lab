@@ -47,3 +47,7 @@ This test simulated a brute force attack against the Metasploitable SSH service 
 **Command used:**
 ```bash
 medusa -h 192.168.1.171 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ssh -t 4 -O medusa_ssh_results.txt
+
+The scan was **manually stopped** after a partial run. No valid password was discovered during this attempt.
+
+The partial results were saved in [medusa_ssh_results.txt](medusa_ssh_results.txt).
