@@ -60,3 +60,19 @@ The partial results were saved in **medusa_ssh_results.txt**.
 - Demonstrates how attackers automate SSH brute-force attacks using common wordlists  
 - Highlights the importance of strong, unique passwords and account lockout policies  
 - Shows how detection systems can alert on repeated failed login attempts  
+
+---
+
+## Medusa SSH Brute Force Attempt
+
+This test simulated a brute force attack against the Metasploitable SSH service using the **rockyou.txt** wordlist to try common passwords.
+
+**Command used:**
+\`\`\`bash
+medusa -h 192.168.1.171 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ssh -t 4 -O medusa_ssh_results.txt
+\`\`\`
+
+The scan was **manually stopped** after a partial run. No valid password was discovered during this attempt.  
+
+The partial results wer
+
