@@ -48,15 +48,11 @@ This test simulated a brute force attack against the Metasploitable SSH service 
 ```bash
 medusa -h 192.168.1.171 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ssh -t 4 -O medusa_ssh_results.txt
 
-The scan was **manually stopped** after a partial run. No valid password was discovered during this attempt.
-
-The partial results were saved in [medusa_ssh_results.txt](medusa_ssh_results.txt).
-
 ---
 
 ## SMB Enumeration with enum4linux
 
-This test scanned the SMB service on the Metasploitable machine to gather information about shares, users, and OS details.
+This test scanned the **SMB service** on the Metasploitable machine to gather information about shares, users, and OS details.
 
 **Command used:**
 ```bash
