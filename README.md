@@ -40,20 +40,21 @@ The output is saved in [nikto_web_scan.txt](./nikto_web_scan.txt).
 
 ---
 
-## Medusa SSH Brute Force Attempt
+## Medusa SSH Brute Force Attempt  
 
-This test simulated a brute force attack against the Metasploitable SSH service using the **rockyou.txt** wordlist to try common passwords.
+This test simulated a brute force attack against the Metasploitable SSH service using the **rockyou.txt** wordlist to try common passwords.  
 
-**Command used:**
+**Command used:**  
 ```bash
 medusa -h 192.168.1.171 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ssh -t 4 -O medusa_ssh_results.txt
 
 ---
 
-## SMB Enumeration with enum4linux
+## SMB Enumeration with enum4linux  
 
-This test scanned the **SMB service** on the Metasploitable machine to gather information about shares, users, and OS details.
+This test scanned the **SMB service** on the Metasploitable machine to gather information about shares, users, and OS details.  
 
-**Command used:**
+**Command used:**  
 ```bash
 enum4linux -a 192.168.1.171 | tee smb_enum_results.txt
+
