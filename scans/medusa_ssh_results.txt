@@ -1,0 +1,1 @@
+Medusa SSH brute force attempt on 192.168.1.171 with rockyou.txt. Target username: msfadmin. Test stopped manually after partial run. No password found yet.
