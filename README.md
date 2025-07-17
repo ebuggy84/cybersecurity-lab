@@ -12,23 +12,3 @@ This scan was performed against Metasploitable to identify open ports, running s
 ```bash
 nmap -sV -A <Metasploitable_IP>
 
-
-
-
----
-
-## Nikto Web Vulnerability Scan
-
-This scan checked for common web vulnerabilities and misconfigurations on the target's HTTP service.
-
-**Command used:**
-```bash
-nikto -h http://<Metasploitable_IP>
-```
-
-The output is saved in [nikto_web_scan.txt](./nikto_web_scan.txt).
-
-**Why this matters:**
-- Quickly identifies outdated web servers
-- Finds default files and weak configurations
-- Useful for web application penetration testing
