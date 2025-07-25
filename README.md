@@ -24,6 +24,20 @@ This project demonstrates **live network monitoring and threat detection** using
 
 ---
 
+## 🖧 Network Architecture  
+
+Below is the network architecture used in this lab, showing how traffic is monitored by Security Onion through a network tap:  
+
+![Network Architecture](https://raw.githubusercontent.com/ebuggy84/security-onion-network-monitoring/main/network-diagram.png)
+
+- **ISP → Modem → Tap → UDM Pro**  
+- **Tap → Security Onion (monitoring live traffic)**  
+- **UDM Pro → Aggregation Switch → Lab & Home Network Devices**  
+
+This setup ensures full packet visibility while isolating monitoring from production traffic.  
+
+---
+
 ## 🚨 High & Medium Alerts  
 
 Here are **real alerts** captured in this lab environment:  
