@@ -28,7 +28,7 @@ This project demonstrates **live network monitoring and threat detection** using
 
 Below is the network architecture used in this lab, showing how traffic is monitored by Security Onion through a network tap:  
 
-![Network Architecture](https://raw.githubusercontent.com/ebuggy84/security-onion-network-monitoring/main/network-diagram.png)
+![Network Architecture](https://github.com/ebuggy84/security-onion-network-monitoring/blob/main/ChatGPT%20Image%20Jul%2024%2C%202025%2C%2009_14_47%20PM.png)
 
 - **ISP → Modem → Tap → UDM Pro**  
 - **Tap → Security Onion (monitoring live traffic)**  
