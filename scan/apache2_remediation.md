@@ -6,12 +6,15 @@ This screenshot confirms the successful remediation of the Apache2-related findi
 
 The following actions were taken to resolve the issues:
 
-```bash
 # 1. Apache2 Version Updated
+
+The outdated Apache2 web server was upgraded to the latest version.
+```bash
 sudo apt update
 sudo apt upgrade apache2 -y
 
 # 2. Unnecessary Modules Removed
+```bash
 sudo a2dismod autoindex status info
 sudo systemctl restart apache2
 
