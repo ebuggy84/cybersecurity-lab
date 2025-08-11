@@ -1,6 +1,6 @@
 # ET INFO HTTP Client Body contains otp= in cleartext
 
-**Date/Time (ET):** <fill>  
+**Date/Time (ET):** 2025-08-10 17:06:09  
 **Rule/SID:** 2035090  
 **Severity:** High  
 **Module:** Suricata  
@@ -18,5 +18,5 @@ Detected HTTP traffic with `otp=` parameter in cleartext body.
 - Investigate if OTP was legitimate or malicious
 
 ## Evidence
-- Screenshot: `artifacts/screenshots/http-otp.png`
-- JSON event: `alerts-<DATE>.jsonl`
+![HTTP OTP Screenshot](artifacts/screenshots/http-otp.png)
+- JSON event: `alerts-2025-08-10.jsonl`

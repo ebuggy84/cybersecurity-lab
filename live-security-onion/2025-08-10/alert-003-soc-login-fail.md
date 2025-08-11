@@ -1,6 +1,6 @@
 # Security Onion - SOC Login Failure
 
-**Date/Time (ET):** <fill>  
+**Date/Time (ET):** 2025-08-10 03:16:57  
 **Rule UUID:** bf86ef21-41e6-417b-9a05-b9ea6bf28a38  
 **Severity:** High  
 **Module:** Sigma  
@@ -18,5 +18,5 @@ Detected failed login attempt to SOC web interface.
 - Confirmed no unauthorized access occurred
 
 ## Evidence
-- Screenshot: `artifacts/screenshots/soc-login-fail.png`
-- JSON event: `alerts-<DATE>.jsonl`
+![SOC Login Fail Screenshot](artifacts/screenshots/soc-login-fail.png)
+- JSON event: `alerts-2025-08-10.jsonl`

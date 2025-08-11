@@ -1,6 +1,6 @@
 # ET P2P eDonkey Publicize File ACK
 
-**Date/Time (ET):** <fill>  
+**Date/Time (ET):** 2025-08-10 23:40:17  
 **Rule/SID:** 2003311  
 **Severity:** High  
 **Module:** Suricata  
@@ -18,5 +18,5 @@ Detected small UDP ACK consistent with eDonkey P2P “publicize file” behavior
 - Consider blocking P2P traffic if against policy
 
 ## Evidence
-- Screenshot: `artifacts/screenshots/edonkey.png`
-- JSON event: `alerts-<DATE>.jsonl`
+![Edonkey Screenshot](artifacts/screenshots/edonkey.png)
+- JSON event: `alerts-2025-08-10.jsonl`
