@@ -1,22 +1,26 @@
-# ET INFO HTTP Client Body contains otp= in cleartext
+# Alert: HTTP Client Body contains `otp=` in cleartext
 
-**Date/Time (ET):** 2025-08-10 17:06:09  
-**Rule/SID:** 2035090  
+**Date:** 2025-08-10  
 **Severity:** High  
-**Module:** Suricata  
+**Source:** Security Onion (Suricata)
 
-## What Triggered
-Detected HTTP traffic with `otp=` parameter in cleartext body.
+## Summary
+HTTP request body included `otp=` over cleartext HTTP.
 
-## Quick Triage
-- Internal Host: <fill>
-- External IP: <fill>
-- Possible insecure credential/token transmission.
+## Details
+- **Rule/SID:** 2035090
+- **Source IP:** <fill>
+- **Destination IP:** <fill>
+- **Proto/Port:** HTTP/80
 
-## Action Taken
-- Logged alert for tracking
-- Investigate if OTP was legitimate or malicious
+## Analysis
+OTP/credentials should not be sent over HTTP. Possible insecure flow.
+
+## Action
+- Identify source app/user.
+- Enforce HTTPS for auth endpoints.
+- Check if any creds/OTP were exposed.
 
 ## Evidence
-![HTTP OTP Screenshot](artifacts/screenshots/http-otp.png)
-- JSON event: `alerts-2025-08-10.jsonl`
+![HTTP OTP](artifacts/screenshots/http-otp.png)  
+Raw export: `alerts-2025-08-10.csv`

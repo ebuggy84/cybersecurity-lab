@@ -1,22 +1,25 @@
-# Security Onion - SOC Login Failure
+# Alert: Security Onion — SOC Login Failure
 
-**Date/Time (ET):** 2025-08-10 03:16:57  
-**Rule UUID:** bf86ef21-41e6-417b-9a05-b9ea6bf28a38  
-**Severity:** High  
-**Module:** Sigma  
+**Date:** 2025-08-10  
+**Severity:** Medium  
+**Source:** Security Onion (Sigma)
 
-## What Triggered
-Detected failed login attempt to SOC web interface.
+## Summary
+Failed login detected on the SOC web UI.
 
-## Quick Triage
-- Source: <fill>
-- Destination: Security Onion web UI
-- Could be failed admin login or brute force attempt.
+## Details
+- **Rule UUID:** bf86ef21-41e6-417b-9a05-b9ea6bf28a38
+- **Source IP:** <fill>
+- **User/Account:** <fill>
+- **Attempts/Window:** <fill>
 
-## Action Taken
-- Logged alert for tracking
-- Confirmed no unauthorized access occurred
+## Analysis
+Could be user error or brute force. Correlate with auth logs.
+
+## Action
+- Verify account activity.
+- If malicious, block source and enforce MFA/lockout.
 
 ## Evidence
-![SOC Login Fail Screenshot](artifacts/screenshots/soc-login-fail.png)
-- JSON event: `alerts-2025-08-10.jsonl`
+![SOC Login Fail](artifacts/screenshots/soc-login-fail.png)  
+Raw export: `alerts-2025-08-10.csv`
